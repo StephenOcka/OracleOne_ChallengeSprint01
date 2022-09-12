@@ -166,7 +166,7 @@ main::-webkit-scrollbar-thumb {
     height: 100%;
     border: 1px solid transparent;
     border-color: #FFF;
-    background: url("/Resources/Img/MessageNotFound.png");
+    background: url("../Img/MessageNotFound.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(0, 0, 0);
