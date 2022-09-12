@@ -1,0 +1,306 @@
+/*--------------General--------------*/
+html{
+  overflow: auto;
+  background-color: #000;
+}
+html, body, #canvasMatrix{
+  width: 100%;
+  height: 100%;
+}
+#canvasMatrix{
+  position: absolute;
+  z-index: -1;
+  opacity: 50%;
+}
+main{
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  align-items: center;
+  text-align: center;
+}
+main::-webkit-scrollbar {
+  width: 10px;
+}
+main::-webkit-scrollbar-track {
+  background: transparent;
+}
+main::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .65);
+  border-radius: 7px;
+  border: 1px solid purple;
+}
+#logoOracleOne{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100px;
+}
+.textArea{
+  overflow: auto;
+  resize: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: 'Quantico', sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  line-height: 160%;
+  justify-content: center;
+  text-align: center;
+}
+.button{
+  margin: 1% 3%;
+  font-family: 'Fira Code', monospace;
+}
+.button, .button:after {
+  width: 150px;
+  height: 60px;
+  border-radius: 8px;
+  border-width: 0.1px;
+  border-color: purple;
+  background-color: #000;
+  background-image: linear-gradient(45deg,#111, #000, #111);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 3px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  touch-action: manipulation;
+  align-items: center;
+  transition: 1s;
+}
+.button:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(transparent 3%, chartreuse 3%, chartreuse 5%, black 5%);
+  content: '';
+  font-family: 'Noto Sans Buhid', sans-serif;
+  font-size: 20px;
+  text-shadow: -3px -3px 0px chartreuse, 3px 3px 0px red;
+  --section-0: inset(50% 50% 50% 50%);
+  --section-1: inset(80% -4px 0 0);
+  --section-2: inset(50% -4px 20% 0);
+  --section-3: inset(10% -4px 75% 0);
+  --section-4: inset(40% -4px 43% 0);
+  --section-5: inset(80% -4px 0 0);
+  clip-path: var(--section-0);
+}
+.button:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(3, end);
+}
+.button:focus,#inputText:focus,#outpuText:focus{
+  outline: 1px;
+  border-color: chartreuse;
+}
+#oracleOne{
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  background-color: #000;
+  font-size: 1.1rem;
+  color: rgb(199, 70, 52);
+}
+#author{
+  position: absolute;
+  left: 100px;
+  bottom: 5px;
+  background-color: #000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: orange;
+}
+#author a{
+  text-decoration: none;
+  color: orange;
+  transition: 1s;
+}
+/*--------------Input--------------*/
+#input{
+    display: block;
+    width: 65%;
+    height: 95%;
+    margin: 0 0 0 1.5%;
+}
+#inputText{
+  width: 94%;
+  height: 75%;
+  border: 1px solid #FFF;
+  background-color: black;
+  color: chartreuse;
+}
+#inputButtons{
+    position:relative;
+    top: 4%;
+}
+#encryptButton:after{
+    content: 'Encriptar';
+}
+#decryptButton:after{
+    content: 'Descifrar';
+}
+/*--------------Output--------------*/
+#output{
+    width: 30%;
+    height: 95%;
+    margin: 0 1.5% 0 0;
+}
+#outputAllText{
+  width: 100%;
+  height: 95%;
+}
+#outputText{
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-color: #FFF;
+    background: url("/Resources/Img/MessageNotFound.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+    background-size: contain;
+    color: chartreuse;
+    opacity: 0.8;
+}
+#labelOne{
+  display: inline;
+  position: relative;
+  z-index: 1;
+  bottom: 15%;
+  background-color: rgba(0, 0, 0,0.85);
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  color: red;
+}
+#outputButtons{
+    position: relative;
+    bottom: 15%;
+}
+#copyButton:after{
+    content: 'Copiar';
+}
+/*--------------Rules--------------*/
+@keyframes glitch {
+  0% {
+    clip-path: var(--section-1);
+    transform: translate(-10px, -10px);
+  }
+  10% {
+    clip-path: var(--section-3);
+    transform: translate(10px, 0px);
+  }
+  20% {
+    clip-path: var(--section-1);
+    transform: translate(-10px, 0px);
+  }
+  30% {
+    clip-path: var(--section-3);
+    transform: translate(10px, -10px);
+  }
+  40% {
+    clip-path: var(--section-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--section-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--section-4);
+    transform: translate(5px, -10px);
+  }
+  70% {
+    clip-path: var(--section-2);
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    clip-path: var(--section-5);
+    transform: translate(10px, -10px);
+  }
+  90% {
+    clip-path: var(--section-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--section-1);
+    transform: translate(0);
+  }
+}
+@media (min-width: 830px){
+  #logoOracleOne{
+    visibility: visible;
+  }
+  #oracleOne{
+    visibility: hidden;
+  }
+}
+@media (max-width: 830px) and (min-width: 701px){
+  #logoOracleOne{
+    visibility: hidden;
+  }
+  #oracleOne{
+    visibility: visible;
+  }
+}
+@media (max-width: 700px) or (max-height: 350px){
+  main{
+    display: block;
+  }
+  #input, #output{
+    display: block;
+    width: 80vw;
+    margin: auto;
+  }
+  .button, .button:after {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+  }
+  #logoOracleOne{
+    visibility: visible;
+    position: relative;
+  }
+  #oracleOne{
+    visibility: hidden;
+  }
+  #author{
+    position: relative;
+    top: 30px;
+    left: 0px;
+  }
+}
+@media(max-width:300px){
+  .button{
+    top:-10px;
+    width: 70%;
+    height: 32px;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+@media(max-height: 450px){
+  #oracleOne{
+    font-size: 14;
+  }
+  #author{
+    font-size: 11px;
+  }
+  .button, .button:after{
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
