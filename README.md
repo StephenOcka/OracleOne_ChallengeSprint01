@@ -60,7 +60,7 @@ The **[crypto-js]** library is used to encode and decrypt the message.
 [StephenOcka]: resources/img/SO/logo_SO-mini.webp
 [LinkedIn]: https://www.linkedin.com/in/estebanpadillag
 [crypto-js]: https://github.com/brix/crypto-js
-[badge-status]: https://img.shields.io/badge/STATUS-CONCLUIDO-green
+[badge-status]: https://img.shields.io/badge/STATUS-CONCLUDED-green
 [badge-GitHub-stars]: https://img.shields.io/github/stars/StephenOcka/TextEncryptor?style=social
 [badge-GitHub-issues]: https://img.shields.io/github/issues/StephenOcka/TextEncryptor?color=blue
 [badge-GitHub-forks]: https://img.shields.io/github/forks/StephenOcka/TextEncryptor?color=blue
