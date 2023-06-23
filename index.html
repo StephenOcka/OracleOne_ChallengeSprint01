@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="StephenOcka" />
-        <link rel="stylesheet" href="Resources/Styles/StyleReset.css">
-        <link rel="stylesheet" href="Resources/Styles/StyleEncrypt.css">
-        <link rel="stylesheet" href="Resources/Styles/SweetAlert2.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap" rel="stylesheet">
-        <script src="Resources/Js/SweetAlert2.min.js"></script>
-        <title>Encriptador</title>
-    </head>
-    <body>
-        <canvas id="canvasMatrix"></canvas>
-        <main>
-            <img id="logoOracleOne" src="Resources/Img/LogoOracleOne.png" alt="Logo Oracle-One">
-            <section id="input">
-                <textarea id="inputText" class="textArea" placeholder="INGRESA TU TEXTO&#10;&#10;Reglas:&#10;El resultado estará en minúsculas.&#10;No puedes ingresar caracteres especiales ni acentuaciones." onkeypress="return character(event)"></textarea>
-                <div id="inputButtons">
-                    <button id="encryptButton" class="button" onclick="txtEncrypt()">Encriptar</button>
-                    <button id="decryptButton" class="button" onclick="txtDecrypt()">Descifrar</button>
-                </div>
-            </section>
-            <section id="output">
-                <div id="outputAllText">
-                    <textarea id="outputText" class="textArea" readonly></textarea>
-                    <label id="labelOne">Ingresa un texto para encriptarlo o descifrarlo.</label>
-                </div>
-                <div id="outputButtons">
-                    <button id="copyButton" class="button" style="visibility: hidden;" onclick="copyOutput()">Copiar</button>
-                </div>
-            </section>
-            <label id="oracleOne">Oracle One</label>
-            <label id="author"><a href="https://www.linkedin.com/in/estebanpadillag">Esteban Padilla</a> | <a href="https://github.com/StephenOcka">github.com/StephenOcka</a></label>
-        </main>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Stephen Ocka">
+  <meta name="copyright" content="">
+  <title>Encriptador</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="app/home/home.css">
+  <script type="module" src="app/home/home.js"></script>
+  <script src="https://kit.fontawesome.com/c5c22a22df.js" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <canvas id="matrix"></canvas>
+  <header>
+    <button id="encrypt">Encrypt</button>
+    <button id="decrypt">Decrypt</button>
+  </header>
+  <main>
+    <textarea placeholder="Enter a text to encrypt or decrypt it." autofocus></textarea>
+  </main>
+  <footer>
+    <a href="https://www.oracle.com/mx/education/oracle-next-education" title="One Oracle">
+      <img src="resources/img/logo_OracleOne.webp" alt="One Oracle Next Education">
+    </a>
+    <span></span>
+    <a href="portafolio.stephenocka.com" title="Stephen Ocka">
+      <img src="resources/img/SO/logo_SO.webp" alt="StephenOcka">
+    </a>
+    <span></span>
+    <a href="https://github.com/StephenOcka/TextEncryptor" title="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </footer>
+</body>
+
 </html>
-<script src="Resources/Js/MainEncrypt.js"></script>
-<script src="Resources/Js/Matrix.js"></script>

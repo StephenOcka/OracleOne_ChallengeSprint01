@@ -1,0 +1,28 @@
+.swal-popup {
+  background: rgb(14, 14, 14) !important;
+  border: 1px solid rgb(187, 187, 187) !important;
+}
+
+.swal-title {
+  color: white !important;
+}
+
+.swal-input {
+  border: 1px solid rgb(187, 187, 187) !important;
+  outline: none !important;
+  color: white !important;
+}
+
+.swal-confirm {
+  background: chartreuse !important;
+  color: black !important;
+}
+
+.swal-deny {
+  background: red !important;
+}
+
+.swal-confirm:hover,
+.swal-deny:hover {
+  scale: 1.03;
+}
