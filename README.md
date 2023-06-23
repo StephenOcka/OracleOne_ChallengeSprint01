@@ -1,28 +1,20 @@
 # **TEXT ENCRYPTOR**
 
----
-
 **Welcome to the basic text encryption and decryption project!**
 
 ![preview]
 
 ## Repo
 
----
-
 ![badge-status] ![badge-GitHub-stars] ![badge-GitHub-forks] ![badge-GitHub-license] ![badge-GitHub-issues]
 
 ## Developer
-
----
 
 ![StephenOcka]
 contact@stephenocka.com
 [LinkedIn]
 
 ## Mode of operation
-
----
 
 ### Encrypt
 
@@ -62,8 +54,6 @@ contact@stephenocka.com
   ![onWarning-2]
 
 ## Libraries
-
----
 
 The **[crypto-js]** library is used to encode and decrypt the message.
 
