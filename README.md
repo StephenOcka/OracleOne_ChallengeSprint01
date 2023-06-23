@@ -20,9 +20,9 @@
 
 ![StephenOcka]
 
-contact@stephenocka.com
-
 [LinkedIn]
+
+contact@stephenocka.com
 
 ## Mode of operation
 
