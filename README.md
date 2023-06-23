@@ -6,12 +6,22 @@
 
 ## Repo
 
-![badge-status] ![badge-GitHub-stars] ![badge-GitHub-forks] ![badge-GitHub-license] ![badge-GitHub-issues]
+![badge-status]
+
+![badge-GitHub-stars]
+
+![badge-GitHub-forks]
+
+![badge-GitHub-license]
+
+![badge-GitHub-issues]
 
 ## Developer
 
 ![StephenOcka]
+
 contact@stephenocka.com
+
 [LinkedIn]
 
 ## Mode of operation
