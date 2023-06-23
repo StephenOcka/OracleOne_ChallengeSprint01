@@ -4,7 +4,7 @@
 
 ![preview]
 
-## Repo
+## Project
 
 ![badge-status]
 
