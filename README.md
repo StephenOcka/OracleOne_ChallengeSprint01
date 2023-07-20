@@ -67,7 +67,7 @@ contact@stephenocka.com
 
 The **[crypto-js]** library is used to encode and decrypt the message.
 
-[StephenOcka]: resources/img/SO/logo_SO-mini.webp
+[StephenOcka]: ./app/assets/img/author/logo-mini.webp
 [LinkedIn]: https://www.linkedin.com/in/estebanpadillag
 [crypto-js]: https://github.com/brix/crypto-js
 [badge-status]: https://img.shields.io/badge/STATUS-CONCLUDED-green
@@ -75,13 +75,13 @@ The **[crypto-js]** library is used to encode and decrypt the message.
 [badge-GitHub-issues]: https://img.shields.io/github/issues/StephenOcka/TextEncryptor?color=blue
 [badge-GitHub-forks]: https://img.shields.io/github/forks/StephenOcka/TextEncryptor?color=blue
 [badge-GitHub-license]: https://img.shields.io/github/license/StephenOcka/TextEncryptor?color=blue
-[preview]: resources/img/screenshot/screenshot-preview.webp
-[onDecrypt-1]: resources/img/screenshot/screenshot-decrypt-01.webp
-[onDecrypt-2]: resources/img/screenshot/screenshot-decrypt-02.webp
-[onDecrypt-3]: resources/img/screenshot/screenshot-decrypt-03.webp
-[onEncrypt-1]: resources/img/screenshot/screenshot-encrypt-01.webp
-[onEncrypt-2]: resources/img/screenshot/screenshot-encrypt-02.webp
-[onEncrypt-3]: resources/img/screenshot/screenshot-encrypt-03.webp
-[onError]: resources/img/screenshot/screenshot-error-01.webp
-[onWarning-1]: resources/img/screenshot/screenshot-warning-01.webp
-[onWarning-2]: resources/img/screenshot/screenshot-warning-02.webp
+[preview]: ./app/assets/img/readme/preview.webp
+[onDecrypt-1]: ./app/assets/img/readme/decrypt-01.webp
+[onDecrypt-2]: ./app/assets/img/readme/decrypt-02.webp
+[onDecrypt-3]: ./app/assets/img/readme/decrypt-03.webp
+[onEncrypt-1]: ./app/assets/img/readme/encrypt-01.webp
+[onEncrypt-2]: ./app/assets/img/readme/encrypt-02.webp
+[onEncrypt-3]: ./app/assets/img/readme/encrypt-03.webp
+[onError]: ./app/assets/img/readme/error-01.webp
+[onWarning-1]: ./app/assets/img/readme/warning-01.webp
+[onWarning-2]: ./app/assets/img/readme/warning-02.webp
