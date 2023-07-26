@@ -1,0 +1,36 @@
+{
+  "name": "text-encryptor",
+  "version": "3.0.0",
+  "description": "Basic text encryption and decryption project",
+  "scripts": {
+    "build": "node src/modules/build/build.mjs",
+    "dev": "node src/test/js/build.mjs"
+  },
+  "keywords": [
+    "encrypter",
+    "encryption",
+    "decryption",
+    "javascript",
+    "css",
+    "html",
+    "web"
+  ],
+  "author": {
+    "name": "Stephen Ocka",
+    "email": "contact@stephenocka.com",
+    "url": "https://portfolio.stephenocka.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-html": "0.17.3",
+    "esbuild": "0.18.17",
+    "html-minifier": "4.0.0",
+    "jsdom": "22.1.0"
+  },
+  "repository": "https://github.com/StephenOcka/TextEncryptor",
+  "homepage": "https://github.com/StephenOcka/TextEncryptor#readme",
+  "bugs": {
+    "url": "https://github.com/StephenOcka/TextEncryptor/issues",
+    "email": "dev.issues@stephenocka.com"
+  }
+}

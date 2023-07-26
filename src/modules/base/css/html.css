@@ -1,0 +1,24 @@
+html {
+  --color-bg: black;
+  --color-txt: white;
+  --font: 'Alegreya Sans SC', sans-serif;
+  align-items: center;
+  background-color: var(--color-bg);
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  color: var(--color-txt);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 400;
+  overflow: hidden auto;
+  scroll-behavior: smooth;
+  text-align: center;
+  width: 100vw
+}

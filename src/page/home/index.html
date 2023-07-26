@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- META CHARSET | VIEWPORT -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TITLE -->
+  <title>Encriptador</title>
+
+  <!-- PRECONNECT -->
+
+  <!-- JS ASYNC -->
+
+  <!-- CSS THAT INCLUDES @IMPORT -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SYNCHRONOUS JS -->
+
+  <!-- SYNCHRONOUS CSS -->
+
+  <!-- PRELOAD -->
+  <link rel="preload" href="../../assets/img/oracle.webp" as="image">
+  <link rel="preload" href="../../assets/img/author.webp" as="image">
+  <link rel="preload" href="../../assets/img/github.webp" as="image">
+
+  <!-- JS DEFER -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+  <!-- JS TYPE MODULE -->
+  <script type="module" src="script.mjs"></script>
+
+  <!-- PREFETCH -->
+
+  <!-- PRERENDER -->
+
+  <!-- EVERYTHING ELSE (’SEO’ META TAGS, ICONS, OPEN GRAPH, ETC) -->
+  <meta name="robots" content="index, follow">
+  <!-- <meta name="description" content=""> -->
+  <!-- <meta name="keywords" content=""> -->
+  <meta name="author" content="Stephen Ocka">
+  <!-- <meta name="copyright" content=""> -->
+  <!-- <link rel="canonical" href=""> -->
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+</head>
+
+<body>
+  <canvas id="matrix"></canvas>
+
+  <header>
+    <button id="encrypt">Encrypt</button>
+    <button id="decrypt">Decrypt</button>
+  </header>
+
+  <main>
+    <textarea placeholder="Enter a text to encrypt or decrypt it." autofocus></textarea>
+  </main>
+
+  <footer>
+    <img id="img-oracle" src="../../assets/img/oracle.webp" alt="One Oracle Next Education">
+    <span></span>
+    <img id="img-author" src="../../assets/img/author.webp" alt="Stephen Ocka">
+    <span></span>
+    <img id="img-github" src="../../assets/img/github.webp" alt="GitHub">
+  </footer>
+</body>
+
+</html>

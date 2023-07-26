@@ -1,0 +1,1 @@
+function o(){window.addEventListener("DOMContentLoaded",()=>{let e=window.location.href;function t(i,r=""){e=e.replace(i,r)}t(".html"),t("index"),window.history.replaceState(null,"",e)})}function n(){o()}n();
