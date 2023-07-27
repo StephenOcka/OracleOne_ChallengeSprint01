@@ -4,5 +4,5 @@ base();
 
 setTimeout(function () {
   const url = new URL(window.location.href);
-  window.location.href = `${url.origin}index.html`;
+  window.location.href = `${url.origin}/index.html`;
 }, 0);
