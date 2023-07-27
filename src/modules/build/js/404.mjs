@@ -21,5 +21,6 @@ export default new build({
     removeComments: true,
     removeRedundantAttributes: true,
     removeEmptyAttributes: true,
+    minifyJS: true,
   },
 });

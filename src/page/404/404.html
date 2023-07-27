@@ -17,7 +17,18 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- SYNCHRONOUS JS -->
+  <script>
+    let href = window.location.href;
+    const replace = (txt, val = "") => {
+      href = href.toString().replace(txt, val);
+    };
+    replace(".html");
+    replace("index");
+    window.history.replaceState(null, "", href);
 
+    const url = new URL(window.location.href);
+    window.location.href = `${url.origin}/index.html`;
+  </script>
   <!-- SYNCHRONOUS CSS -->
 
   <!-- PRELOAD -->
