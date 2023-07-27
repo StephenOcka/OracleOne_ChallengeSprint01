@@ -11,7 +11,6 @@ export default new build({
       ".woff2": "file",
     },
     assetNames: "assets/[hash]",
-    chunkNames: "[ext]/[hash]",
     plugins: [htmlPlugin()],
   },
   fileMiniHTML: "public/404.html",
@@ -19,8 +18,7 @@ export default new build({
     collapseInlineTagWhitespace: true,
     collapseWhitespace: true,
     removeComments: true,
-    removeRedundantAttributes: true,
-    removeEmptyAttributes: true,
     minifyJS: true,
+    minifyCSS: true,
   },
 });

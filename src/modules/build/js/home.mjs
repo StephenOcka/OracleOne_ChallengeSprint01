@@ -19,7 +19,7 @@ export default new build({
     collapseWhitespace: true,
     collapseInlineTagWhitespace: true,
     removeComments: true,
-    removeRedundantAttributes: true,
-    removeEmptyAttributes: true,
+    minifyJS: true,
+    minifyCSS: true,
   },
 });
