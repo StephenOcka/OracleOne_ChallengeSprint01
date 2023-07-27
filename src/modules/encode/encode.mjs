@@ -6,7 +6,7 @@ const messageError = `The text is invalid, or the password is incorrect.
 Please check the data and try again.`;
 
 export default function () {
-  const $textarea = document.querySelector("main").querySelector("textarea");
+  const $textarea = document.querySelector("main > textarea");
   $textarea.addEventListener("keydown", (event) => {
     const uKey = $textarea.value.charAt($textarea.value.length - 1);
     if ((event.code === "Space" && uKey === " ") || (event.code === "Enter" && uKey === "\n")) {
