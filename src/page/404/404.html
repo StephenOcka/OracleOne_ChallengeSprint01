@@ -17,16 +17,9 @@
 
   <!-- SYNCHRONOUS JS -->
   <script>
-    let href = window.location.href;
-    const replace = (txt, val = "") => {
-      href = href.toString().replace(txt, val);
-    };
-    replace(".html");
-    replace("index");
-    window.history.replaceState(null, "", href);
-
     const url = new URL(window.location.href);
-    window.location.href = `${url.origin}/index.html`;
+    window.history.replaceState(null, "", url.origin);
+    window.location.href = `${url.origin}`;
   </script>
   <!-- SYNCHRONOUS CSS -->
 
@@ -51,9 +44,13 @@
 </head>
 
 <body style="background-color: black; width: 100%;height: 100%;">
+
   <header></header>
+
   <main></main>
+
   <footer></footer>
+
 </body>
 
 </html>

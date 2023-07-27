@@ -1,11 +1,20 @@
+const url = new URL(window.location.href);
+
+const changeURL = (object = {}) => {
+  let path = url.pathname;
+
+  for (const property in object) {
+    path = path.replace(property, object[property]);
+  }
+
+  window.history.replaceState(null, "", path);
+};
+
 export default function () {
   window.addEventListener("DOMContentLoaded", () => {
-    let url = window.location.href;
-    const replace = (txt, val = "") => {
-      url = url.replace(txt, val);
-    };
-    replace(".html");
-    replace("index");
-    window.history.replaceState(null, "", url);
+    changeURL({
+      "index.html": "",
+      ".html": "",
+    });
   });
 }
