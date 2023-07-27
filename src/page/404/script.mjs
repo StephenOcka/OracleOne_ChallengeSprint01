@@ -3,5 +3,5 @@ import base from "../../modules/base/base.mjs";
 base();
 
 setTimeout(function () {
-  window.location.href = "./../home/index.html";
+  window.location.href = "/index.html";
 }, 0);
