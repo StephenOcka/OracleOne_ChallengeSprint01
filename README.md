@@ -57,12 +57,13 @@
 
 ## Libraries
 
-The **[crypto-js]** library is used to encode and decrypt the message.
-The **[SweetAlert2]** library is used to display alert messages.
-The development dependency **[esbuild]** is used to package the project and build the static files for production.
-The development dependency **[@chialab/esbuild-plugin-html]** used as plugin to **[esbuild]**.
-Then development dependency **[html-minifier]** is used to minify HTML for production.
-The **[jsdom]** development dependency is used to manipulate the DOM of the HTML using node before minifying it.
+- The **[crypto-js]** library is used to encode and decrypt the message.
+- The **[SweetAlert2]** library is used to display alert messages.
+- The development dependency **[esbuild]** is used to package the project and build the static files for production.
+- The development dependency **[@chialab/esbuild-plugin-html]** used as plugin to **[esbuild]**.
+- Then development dependency **[html-minifier]** is used to minify HTML for production.
+- The **[jsdom]** development dependency is used to manipulate the DOM of the HTML using node before minifying it.
+- The **[cpx2]** development dependency is used to clone SEO files.
 
 ## Developer
 
@@ -80,6 +81,7 @@ contact@stephenocka.com
 [@chialab/esbuild-plugin-html]: https://www.npmjs.com/package/@chialab/esbuild-plugin-html
 [html-minifier]: https://www.npmjs.com/package/html-minifier
 [jsdom]: https://www.npmjs.com/package/jsdom
+[cpx2]: https://www.npmjs.com/package/cpx2
 [badge-status]: https://img.shields.io/badge/STATUS-CONCLUDED-green
 [badge-GitHub-stars]: https://img.shields.io/github/stars/StephenOcka/TextEncryptor?style=social
 [badge-GitHub-issues]: https://img.shields.io/github/issues/StephenOcka/TextEncryptor?color=blue
